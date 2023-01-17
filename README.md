@@ -17,7 +17,7 @@ In the `python web app` folder you will find a simple python script that serves 
 
 ### Challenge 2 ###
 
-In this challenge you have to deploy the voting application provided under the `voting app` folder on a kubernets cluster and successfully acceess both the voting and the results page through your web-browser.
+In this challenge you have to deploy the voting application provided under the `voting app` folder on a kubernets cluster under the `voting` namespace and successfully acceess both the voting and the results page through your web-browser.
 
 Hints:
 1. The database should be able to save data at the path `/var/lib/postgresql/data`
