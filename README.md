@@ -14,3 +14,11 @@ In the `python web app` folder you will find a simple python script that serves 
 3.	Expose the application to the outside world.
 4.	Add a Kubernetes check so that no traffic is sent to the application until it is ready to serve. (The application returns a 200 to an http request on path: /, port: 8080 once it is ready).
 5.	The application serves a message through an environment variable `MESSAGE`. Configure the Kubernetes setup such that you set the variable to display “Congratulations you have completed the challenge”.
+
+### Challenge 2 ###
+
+In this challenge you have to deploy the voting application provided under the `voting app` folder on a kubernets cluster and successfully acceess both the voting and the results page through your web-browser.
+
+Hints:
+1. The database should be able to save data at the path `/var/lib/postgresql/data`
+2. The redis cache is used by the application to store the votes.
