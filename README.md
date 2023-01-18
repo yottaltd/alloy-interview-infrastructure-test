@@ -12,11 +12,11 @@ We have been instructed that the database must have `postgres:15-alpine` version
 
 Along with this we also need a debug deployment based off of `Alpine Linux`. This debug deployment should be able to ssh into other containers running inside the cluster and run basic network debug commands against other deployments. 
 
-### MUST HAVES ###
+### MUST TO HAVE ###
 - Caching capabilities.
 - Ability to cast and review votes.
 - Ability to debug network issues in the application if any.
 
-### GOOD TO HAVE ###
+### NICE TO HAVE ###
 - For security the databse should only accept Ingress from the cache and Egress should be blocked.
 - The client should be able to handle a spike in traffic on demand.
