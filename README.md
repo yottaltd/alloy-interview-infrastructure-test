@@ -22,3 +22,7 @@ In this challenge you have to deploy the voting application provided under the `
 Hints:
 1. The database should be able to save data at the path `/var/lib/postgresql/data`
 2. The redis cache is used by the application to store the votes.
+3.  The application must be given "200Mi" of memory and "1" CPU core and should be terminated by the cluster if it consumes more than "500Mi" of memory and "1.5" CPU cores. 
+4.	Expose the application to the outside world.
+5.	Add a Kubernetes check so that no traffic is sent to the application until it is ready to serve. (The application returns a 200 to an http request on path: /, port: 8080 once it is ready).
+6.	The application serves a message through an environment variable `MESSAGE`. Configure the Kubernetes setup such that you set the variable to display “Congratulations you have completed the challenge”.
