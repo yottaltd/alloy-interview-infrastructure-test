@@ -2,9 +2,9 @@
 
 Welcome and thanks for having accepted the invite to this assignment.
 
-We have just recieved a request from the dev team to deploy an application they just developed to finally resolve the burning issue whether there are more cat lovers or dog lovers at Causeway?
+We have just received a request from the dev team to deploy an application they just developed to finally resolve the burning issue of whether there are more cat lovers or dog lovers at Causeway?
 
-The dev team has provided us with the source code of the front-end web-app, worker and the Node.js web-app along with the architecture of the application. You are to deploy the application and test it based off of the requirements recieved from the devs.
+The dev team has provided us with the source code of the front-end web-app, worker and the Node.js web-app along with the architecture of the application. You are to deploy the application and test it based off of the requirements received.
 
 The architecture of the application is shown in the `architecure.png`. The application is made up of a front-end web app in Python which lets a user vote between two options, a Redis cache which collects new votes, a .NET worker which consumes votes and stores them in the Postgres database backed by a storage volume and a Node.js web app which shows the results of the voting in real time.
 
