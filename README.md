@@ -10,7 +10,7 @@ The architecture of the application is shown in the `architecure.png`. The appli
 
 We have been instructed that the database must use the `postgres:15-alpine` image, have the following credentials passed through environment variables `POSTGRES_USER: postgres`, `POSTGRES_PASSWORD: postgres` and store the data at in `/var/lib/postgresql/data`. The cache must use `redis:alpine` image and have a storage attached to it to store the votes in `/data`.
 
-Along with this we also need a debug deployment based off of `Alpine Linux`. Through debug deployment we should be able to run:
+Along with this we also need a debug deployment based off of `alpine:latest`. Through debug deployment we should be able to run:
 
 * Network diagnostic commands, e.g. ping, tracert, etc.
 * Redis querying through the `redis-cli` tool
