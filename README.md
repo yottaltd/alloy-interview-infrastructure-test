@@ -8,7 +8,7 @@ The dev team has provided us with the source code of the front-end web-app, work
 
 The architecture of the application is shown in the `architecure.png`. The application is made up of a front-end web app in Python which lets a user vote between two options, a Redis cache which collects new votes, a .NET worker which consumes votes and stores them in the Postgres database backed by a storage volume and a Node.js web app which shows the results of the voting in real time.
 
-We have been instructed that the database must have `postgres:15-alpine` version and have the following credentials passed through environment variables `POSTGRES_USER: postgres`, `POSTGRES_PASSWORD: postgres`. The cache must use Redis based on Alpine Linux and have a storage attached to it to store the votes.
+We have been instructed that the database must use the `postgres:15-alpine` image, have the following credentials passed through environment variables `POSTGRES_USER: postgres`, `POSTGRES_PASSWORD: postgres` and store the data at in `/var/lib/postgresql/data`. The cache must use `redis:alpine` image and have a storage attached to it to store the votes in `/data`.
 
 Along with this we also need a debug deployment based off of `Alpine Linux`. Through debug deployment we should be able to run:
 
