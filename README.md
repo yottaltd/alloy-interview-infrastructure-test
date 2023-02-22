@@ -16,7 +16,7 @@ Along with this we also need a debug deployment based off of `alpine:latest`. Th
 * Redis querying through the `redis-cli` tool
 * Postgres querying through the `psql` tool
 
-### MUST TO HAVE ###
+### MUST HAVE ###
 * The Python web-app is running, has readiness/liveness probes configured and is reachable from the outside
 * The Node.js web-app is running, has readiness/liveness probes configured and is reachable from the outside
 * The .Net worker is running
